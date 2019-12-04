@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: draco1
+spec:
+  replicas: 2
+  template:
+   metadata:
+     labels:
+       name: draco1
+   spec:
+     containers:
+     - name: draconifi
+       image: docker.io/ging/fiware-draco 
+       ports:
+       - containerPort: 6060
+       - containerPort: 6565
+       - containerPort: 6969

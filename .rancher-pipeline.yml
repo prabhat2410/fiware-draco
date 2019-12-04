@@ -1,0 +1,13 @@
+stages:
+- name: deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+    env:
+      NIFI_WEB_HTTP_PORT: "6060"
+  - applyYamlConfig:
+      path: ./service.yaml
+  - applyYamlConfig:
+      path: ./ingress.yaml
+timeout: 60
+notification: {}

@@ -7,8 +7,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 6464
-      nodePort: 30050
+    - port: 6666
+      nodePort: 30015
       name: http
   selector:
     name: old-draco

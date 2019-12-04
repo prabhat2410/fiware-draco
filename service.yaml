@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: draco1-service
+  labels:
+    name: old-draco
+spec:
+  type: NodePort
+  ports:
+    - port: 6464
+      nodePort: 30050
+      name: http
+  selector:
+    name: old-draco

@@ -11,4 +11,4 @@ spec:
       nodePort: 30015
       name: http
   selector:
-    name: old-draco
+    name: draco1

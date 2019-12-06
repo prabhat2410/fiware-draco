@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: draco1-service
   labels:
-    name: old-draco
+    name: draco1
 spec:
   type: NodePort
   ports:

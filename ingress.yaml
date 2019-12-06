@@ -12,4 +12,4 @@ spec:
       - path: /
         backend:
           serviceName: draco1-service
-          servicePort: 6666
+          servicePort: 6060

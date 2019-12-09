@@ -16,3 +16,6 @@ spec:
        - containerPort: 6060
        - containerPort: 6565
        - containerPort: 6969
+       env:
+       - name: NIFI_WEB_HTTP_PORT
+         value: 6060

@@ -3,8 +3,6 @@ stages:
   steps:
   - applyYamlConfig:
       path: ./deployment.yaml
-    env:
-      NIFI_WEB_HTTP_PORT: "6060"
   - applyYamlConfig:
       path: ./service.yaml
   - applyYamlConfig:

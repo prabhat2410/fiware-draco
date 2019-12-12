@@ -5,7 +5,5 @@ stages:
       path: ./deployment.yaml
   - applyYamlConfig:
       path: ./service.yaml
-  - applyYamlConfig:
-      path: ./ingress.yaml
 timeout: 60
 notification: {}

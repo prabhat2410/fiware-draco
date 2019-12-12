@@ -9,13 +9,10 @@ spec:
      labels:
        name: draco1
   spec:
-    containers:
-    - env:
-      - name: NIFI_WEB_HTTP_PORT
-        value: "6060"
-      name: draconifi
-      image: docker.io/ging/fiware-draco 
-      ports:
-        - containerPort: 6060
-        - containerPort: 6565
-        - containerPort: 6969
+  containers:
+  - name: draconifi
+    image: docker.io/ging/fiware-draco 
+    ports:
+       - containerPort: 6060
+       - containerPort: 6565
+       - containerPort: 6969

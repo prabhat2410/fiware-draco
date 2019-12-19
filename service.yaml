@@ -7,7 +7,7 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 6060
+    - port: 6161
       nodePort: 30015
       name: http
   selector:

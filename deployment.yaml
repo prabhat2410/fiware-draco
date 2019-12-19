@@ -13,6 +13,6 @@ spec:
   - name: draconifi
     image: docker.io/ging/fiware-draco 
     ports:
-       - containerPort: 6060
+       - containerPort: 6161
        - containerPort: 6565
        - containerPort: 6969

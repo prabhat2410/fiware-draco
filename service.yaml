@@ -8,7 +8,7 @@ spec:
   type: NodePort
   ports:
     - port: 6161
-      nodePort: 30015
+      nodePort: 30017
       name: http
   selector:
     name: draco1

@@ -8,11 +8,14 @@ spec:
    metadata:
      labels:
        name: draco1
-  spec:
-  containers:
-  - name: draconifi
-    image: docker.io/ging/fiware-draco 
-    ports:
+   spec:
+     containers:
+     - name: draconifi
+       image: docker.io/ging/fiware-draco 
+       ports:
        - containerPort: 6161
        - containerPort: 6565
        - containerPort: 6969
+       env:
+       - name: NIFI_WEB_HTTP_PORT
+         value: "6161"
